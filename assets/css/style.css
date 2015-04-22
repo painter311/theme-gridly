@@ -2564,11 +2564,11 @@ hr.large {
   padding: 7px;
 }
 
-div.right {
+div.left {
   position: fixed;
   top: 0;
   left: 0;
-  width: 20%;
+  width: 14%;
   height: 100%;
   background-color: white;
   -ms-box-sizing: border-box;
@@ -2577,37 +2577,37 @@ div.right {
   box-sizing: border-box;
   padding: 125px 35px 35px 35px;
 }
-div.right h2 {
+div.left h2 {
   border-bottom: 1px solid #464748;
   padding-bottom: 15px;
 }
-div.right h2 .typcn {
+div.left h2 .typcn {
   font-size: 2.5rem;
   color: #e7e2d0;
 }
-div.right h3 {
+div.left h3 {
   border-bottom: 1px solid #464748;
   font-weight: 700;
   padding: 10px 0 10px 0;
   font-size: 1rem;
   line-height: 1.5rem;
 }
-div.right p {
+div.left p {
   color: #464748;
   font-size: 0.9rem;
   padding: 0;
   margin: 0;
 }
-div.right p.bio {
+div.left p.bio {
   padding-top: 15px;
 }
-div.right ul.right-links {
+div.left ul.left-links {
   padding-top: 15px;
   line-height: 1.5rem;
 }
-div.right ul.right-links li a {
+div.left ul.left-links li a {
   color: #464748;
 }
-div.right ul.right-links li a:hover {
+div.left ul.left-links li a:hover {
   color: #44a084;
 }
