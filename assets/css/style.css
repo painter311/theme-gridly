@@ -1563,8 +1563,7 @@ body {
   font-size: 100%;
   font-family: 'Droid Sans', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.625;
-  color: #252525;
-  background: url('../img/light/bg.jpg');
+  
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 1.25 * 96dpi) {
   body {
@@ -1962,7 +1961,7 @@ hr.large {
 .blog-post {
   -webkit-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
-  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+  2px 2px 3px 1px rgba(0, 0, 0, 0.15);
 }
 .page,
 .post {
