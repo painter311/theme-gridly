@@ -1805,6 +1805,7 @@ hr.large {
 .wrap {
   width: 80%;
   margin-left: 3%;
+    float: right;
 }
 .header {
   width: 100%;
