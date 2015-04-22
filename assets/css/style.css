@@ -1973,7 +1973,8 @@ hr.large {
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
   background: #ffffff;
-  float: right;
+  margin-left: 20% ;
+  margin-right: 20% ;
 }
 .post-area {
   margin-bottom: 30px;
@@ -2570,7 +2571,7 @@ div.left {
   position: fixed;
   top: 0;
   left: 0;
-  width: 14%;
+  width: 200px;
   height: 100%;
   background-color: white;
   -ms-box-sizing: border-box;
