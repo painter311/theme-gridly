@@ -1972,6 +1972,7 @@ hr.large {
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
   background: #ffffff;
+  float: right;
 }
 .post-area {
   margin-bottom: 30px;
