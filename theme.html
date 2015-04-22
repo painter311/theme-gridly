@@ -29,7 +29,11 @@
     {% endif %}
   </head>
   <body>
-
+<div class="left">
+  <h2><img src="{{ site.avatar }}" class="avatar" /></h2>
+  <h3>{{ site.name }}</h3>
+  <p class="bio">{{ site.bio }}</p>
+</div>
     {% if is_login %}
 
       {{ login_form }}
@@ -256,11 +260,7 @@
       </div>
 
       {% endif %}
-<div class="right">
-        <h2><img src="{{ site.avatar }}" class="avatar" /></h2>
-        <h3>{{ site.name }}</h3>
-        <p class="bio">{{ site.bio }}</p>
-      </div>
+
       
       
       <footer class="footer">
