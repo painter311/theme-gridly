@@ -2563,3 +2563,51 @@ hr.large {
   line-height: 10pt;
   padding: 7px;
 }
+
+div.right {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 125px 35px 35px 35px;
+}
+div.right h2 {
+  border-bottom: 1px solid #464748;
+  padding-bottom: 15px;
+}
+div.right h2 .typcn {
+  font-size: 2.5rem;
+  color: #e7e2d0;
+}
+div.right h3 {
+  border-bottom: 1px solid #464748;
+  font-weight: 700;
+  padding: 10px 0 10px 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+div.right p {
+  color: #464748;
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
+}
+div.right p.bio {
+  padding-top: 15px;
+}
+div.right ul.right-links {
+  padding-top: 15px;
+  line-height: 1.5rem;
+}
+div.right ul.right-links li a {
+  color: #464748;
+}
+div.right ul.right-links li a:hover {
+  color: #44a084;
+}
