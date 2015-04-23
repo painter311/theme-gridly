@@ -29,87 +29,33 @@
     {% endif %}
   </head>
   <body>
-    <header class="header">
-       
-        <div class="nav-logo">
-          <div class="logo">
-            <h1><a href="/" rel="home">{{ site.name }}</a></h1>
-          </div>
-          
-        </div>
-        <div class="social-icons">
-          <ul>
-            {% if site.twitter %}
-            <li>
-              <a href="{{ site.twitter }}" title="Twitter" target="_blank">
-                <i class="icon-twitter"></i>
-                <span class="hide-text">Twitter</span>
-              </a>
-            </li>
-            {% endif %}
-            {% if site.facebook %}
-            <li>
-              <a href="{{ site.facebook }}" title="Facebook" target="_blank">
-                <i class="icon-facebook"></i>
-                <span class="hide-text">Facebook</span>
-              </a>
-            </li>
-            {% endif %}
-            {% if site.googleplus %}
-            <li>
-              <a href="{{ site.googleplus }}?rel=author" title="Google+" target="_blank">
-                <i class="icon-google-plus"></i>
-                <span class="hide-text">Google Plus</span>
-              </a>
-            </li>
-            {% endif %}
-            {% if site.linkedin %}
-            <li>
-              <a href="{{ site.linkedin }}" title="LinkedIn" target="_blank">
-                <i class="icon-linkedin"></i>
-                <span class="hide-text">LinkedIn</span>
-              </a>
-            </li>
-            {% endif %}
-           
-          </ul>
-        </div>
-      </header>
-<div class="left">
-  <h2><img src="{{ site.avatar }}" class="avatar" /></h2>
-  <h3>{{ site.name }}</h3>
-  <p class="bio">{{ site.bio }}</p>
-  <nav id="nav">
-            <ul>
-              <li><a href="/">Home</a></li>
-              {% if pages %}
-              {% for page in pages %}
-              <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
-              {% endfor %}
-              {% endif %}
-            </ul>
-          </nav>
-<!-- start feedwind code --><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://cnobriefingclips.postach.io/",rssmikle_frame_width: "275",rssmikle_frame_height: "400",frame_height_by_article: "10",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "off",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "Off",rssmikle_title: "off",rssmikle_title_sentence: "All Clips",rssmikle_title_link: "",rssmikle_title_bgcolor: "#666666",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#666666",rssmikle_item_border_bottom: "off",rssmikle_item_description: "title_only",item_link: "off",rssmikle_item_description_length: "75",rssmikle_item_description_color: "#808080",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script>
+    
+    
+    
+    
+  
+          {% if is_login %}
 
-</div>
-    {% if is_login %}
+          {{ login_form }}
 
-      {{ login_form }}
-
-    {% else %}
-    <div class="wrap">
+          {% else %}
+  <div class="colmask threecol">
+	  <div class="colmid">
+		  <div class="colleft">
+			  <div class="col1">
+			    <!-- Column 1 start -->
       
 
-      {% if is_home or is_tag %}
-      <div class="post-area">
+          {% if is_home or is_tag %}
+          <div class="post-area">
 
-        {% if is_tag %}
-        <h2 class="tag-head">Showing all posts tagged {{ tag }}:</h2>
-        {% endif %}
-
-        {% if posts %}
-        <section itemscope itemtype="http://schema.org/Blog" class="posts">
-        {% for post in posts %}
+          {% if is_tag %}
+          <h2 class="tag-head">Showing all posts tagged {{ tag }}:</h2>
+          {% endif %}
+  
+          {% if posts %}
+          <section itemscope itemtype="http://schema.org/Blog" class="posts">
+          {% for post in posts %}
           <article itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting" class="blog-post">
             {% if post.photos %}
             {% for photo in post.photos %}
@@ -240,26 +186,92 @@
         </section>
         {% endif %}
       </article>
-      <!--
-      <div class="post-nav">
-        <div class="post-prev"></div>
-        <div class="post-next"></div>
-      </div>
-      -->
-
-      {% elif post.type == 'page' %}
-
-      <div class="page">
-        <div class="post-content" data-type-cleanup="true">
-          <h1>{{ page.title }}</h1>
-          {{ page.content }}
+          <!--
+          <div class="post-nav">
+            <div class="post-prev"></div>
+            <div class="post-next"></div>
+          </div>
+          -->
+    
+          {% elif post.type == 'page' %}
+    
+          <div class="page">
+            <div class="post-content" data-type-cleanup="true">
+              <h1>{{ page.title }}</h1>
+              {{ page.content }}
+            </div>
+          </div>
+    
+          {% endif %}
         </div>
-       
-      </div>
+    
+    
+    
+    
+    
+    
+			  <div class="col2">
+				<!-- Column 2 start -->
+				  <h2><img src="{{ site.avatar }}" class="avatar" /></h2>
+          <h3>{{ site.name }}</h3>
+          <p class="bio">{{ site.bio }}</p>
+          <nav id="nav">
+            <ul>
+              <li><a href="/">Home</a></li>
+              {% if pages %}
+              {% for page in pages %}
+              <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
+              {% endfor %}
+              {% endif %}
+            </ul>
+          </nav>
+<!-- start feedwind code --><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://cnobriefingclips.postach.io/",rssmikle_frame_width: "275",rssmikle_frame_height: "400",frame_height_by_article: "10",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "off",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "Off",rssmikle_title: "off",rssmikle_title_sentence: "All Clips",rssmikle_title_link: "",rssmikle_title_bgcolor: "#666666",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#666666",rssmikle_item_border_bottom: "off",rssmikle_item_description: "title_only",item_link: "off",rssmikle_item_description_length: "75",rssmikle_item_description_color: "#808080",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script>
+        </div>
 
-      {% endif %}
 
-      
+      <div class="col3">
+				<!-- Column 3 start -->
+				<div id="ads">
+					<a href="http://matthewjamestaylor.com">
+						<img src="mjt-125x125.gif" width="125" border="0" height="125" alt="Art and Design by Matthew James Taylor" />
+					</a>
+				</div>
+				<h2>Browser Compatibility</h2>
+				<p>This 3 column liquid Layout has been tested on the following browsers:</p>
+				<h3>iPhone &amp; iPod Touch</h3>
+				<ul>
+					<li>Safari</li>
+				</ul>
+				<h3>Mac</h3>
+				<ul>
+					<li>Safari</li>
+					<li>Firefox</li>
+					<li>Opera 9.25</li>
+					<li>Netscape 9.0.0.5 &amp; 7.1</li>
+				</ul>
+				<h3>Windows</h3>
+				<ul>
+					<li>Firefox 1.5, 2 &amp; 3</li>
+					<li>Safari</li>
+					<li>Opera 8.1 &amp; 9</li>
+					<li>Google Chrome</li>
+					<li>Explorer 5.5, 6 &amp; 7</li>
+					<li>Netscape 8</li>
+				</ul>
+				<h2>Valid XHTML strict markup</h2>
+				<p>The HTML in this layout validates as XHTML 1.0 strict.</p>
+				<h2>This layout is FREE for anyone to use</h2>
+				<p>That's right, you don't have to pay anything. If you are feeling generous however, link back to this page so other people can find and use this layout too.</p>
+				<h2>Centered menus compatible</h2>
+				<p>This layout is fully compatible with my <a href="http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support">cross-browser compatible centered menus</a>.</p>
+				<!-- Column 3 end -->
+			</div>
+		
+		
+		
+		</div>
+	</div>
+</div>   
       
     <footer class="footer">
         <div class="copyright">
