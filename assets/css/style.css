@@ -2638,6 +2638,7 @@ div.left ul.left-links li a:hover {
 
 .bio {
   font-size: .8em;
+  color: slategrey;
 }
 #content .feed_item_title {
 
@@ -2663,7 +2664,7 @@ line {
     position: fixed;
   bottom: 0;
   /* width: 100%; */
-  color: #666666;
+  color: slategrey;
   font-size: .8em;
 }
 
@@ -2683,6 +2684,12 @@ a {
 img.avatar {
   max-width: 50%;
 }
+
+
+p {
+   color: slategrey;
+}
+
 
 
 
