@@ -2642,3 +2642,11 @@ div.left ul.left-links li a:hover {
 
   font-weight: normal !important;
 }
+
+
+nav#nav {
+  font-family: 'Droid Sans', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  color: #666666;
+  font-size: 12px;
+}
