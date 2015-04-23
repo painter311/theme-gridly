@@ -2659,4 +2659,10 @@ line {
   -webkit-box-shadow: 0 -1px 0 rgba(133, 133, 133, 0.2);
   -moz-box-shadow: 0 -1px 0 rgba(133, 133, 133, 0.2);
   box-shadow: 0 -1px 0 rgba(133, 133, 133, 0.2);
+    position: fixed;
+  bottom: 0;
+  /* width: 100%; */
+  color: #666666;
+  font-size: .8em;
+}
 }
