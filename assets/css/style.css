@@ -2650,3 +2650,13 @@ nav#nav {
   color: #666666;
   font-size: 12px;
 }
+
+
+.line {
+  border-bottom: solid rgba(255, 255, 255, 0.45);
+  border-bottom-width: 1px;
+  border-bottom-width: 0.0625rem;
+  -webkit-box-shadow: 0 -1px 0 rgba(133, 133, 133, 0.2);
+  -moz-box-shadow: 0 -1px 0 rgba(133, 133, 133, 0.2);
+  box-shadow: 0 -1px 0 rgba(133, 133, 133, 0.2);
+}
