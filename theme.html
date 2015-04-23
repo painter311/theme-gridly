@@ -34,10 +34,6 @@
     <div class="colmask leftmenu">
       <div class="colleft">
           <div class="col1">
-            
-                <h1>Nicely centered</h1>
-                <p>This text block is vertically centered.
-                <p>Horizontally, too, if the window is wide enough.
                 <!-- Column 1 start -->{% if is_home or is_tag %}
             <div class="post-area">{% if is_tag %}
                      <h2 class="tag-head">Showing all posts tagged {{ tag }}:</h2>
@@ -165,14 +161,15 @@
               
   
                     
-                     <h2><img src="{{ site.avatar }}" class="avatar" /></h2>
+                     <a href="/"><h2><img src="{{ site.avatar }}" class="avatar" /></h2></a>
 
                      <h3>{{ site.name }}</h3>
 
                     <p class="bio">{{ site.bio }}</p>
+                    <hr>
                     <nav id="nav">
                         <ul>
-                            <li><a href="/">Home</a>
+                            <li><a href="/"></a>
                             </li>{% if pages %} {% for page in pages %}
                             <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a>
                             </li>{% endfor %} {% endif %}</ul>
@@ -206,7 +203,7 @@
                                 rssmikle_title: "off",
                                 rssmikle_title_sentence: "All Clips",
                                 rssmikle_title_link: "",
-                                rssmikle_title_bgcolor: "#666666",
+                                rssmikle_title_bgcolor: "transparent",
                                 rssmikle_title_color: "#FFFFFF",
                                 rssmikle_title_bgimage: "",
                                 rssmikle_item_bgcolor: "#FFFFFF",
