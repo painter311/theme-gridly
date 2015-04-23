@@ -1900,53 +1900,7 @@ hr.large {
 #nav ul li a.active {
   text-decoration: underline;
 }
-.footer {
-  width: 100%;
-  display: inline;
-  padding-top: 10px;
-  padding-top: 0.625rem;
-  margin-top: 20px;
-  margin-top: 1.25rem;
-}
-.copyright {
-  width: 100%;
-  display: inline;
-  float: left;
-  border-top: solid rgba(255, 255, 255, 0.45);
-  border-top-width: 1px;
-  border-top-width: 0.0625rem;
-  -webkit-box-shadow: 0 -1px 0 rgba(133, 133, 133, 0.2);
-  -moz-box-shadow: 0 -1px 0 rgba(133, 133, 133, 0.2);
-  box-shadow: 0 -1px 0 rgba(133, 133, 133, 0.2);
-}
-.copyright:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-.copyright:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.copyright p {
-  padding-top: 15px;
-  padding-top: 0.9375rem;
-  color: #4f5356;
-  font-size: 12px;
-  font-size: 0.75rem;
-}
-.copyright a {
-  color: #898989;
-  text-decoration: none;
-}
-.copyright a:hover {
-  color: #000000;
-  text-decoration: underline;
-}
+
 /**
  * General Page styles
  */
@@ -2620,14 +2574,6 @@ div.left ul.left-links li a:hover {
 
 
 
-/* 'widths' sub menu */
-#layoutdims {
-	clear:both;
-	background:#eee;
-	border-top:4px solid #000;
-	margin:0;
-	padding:6px 15px !important;
-	text-align:right;
 }
 /* column container */
 .colmask {
@@ -2642,7 +2588,7 @@ div.left ul.left-links li a:hover {
 .colmid,
 .colleft {
 	float:left;
-	width:100%;			/* width of page */
+	width:100%;
 	position:relative;
 }
 .col1,
@@ -2650,33 +2596,34 @@ div.left ul.left-links li a:hover {
 .col3 {
 	float:left;
 	position:relative;
-	padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
-					only padding top and bottom is included here, make it whatever value you need */
+	padding:0 0 1em 0;
 	overflow:hidden;
 }
-/* 3 Column settings */
-.threecol {
-	background:#eee;		/* right column background colour */
+/* 2 Column (left menu) settings */
+.leftmenu {
+	background:#fff;		/* right column background colour */
 }
-.threecol .colmid {
-	right:25%;			/* width of the right column */
-	background:#fff;		/* center column background colour */
-}
-.threecol .colleft {
-	right:50%;			/* width of the middle column */
+.leftmenu .colleft {
+	right:75%;			/* right column width */
 	background:#f4f4f4;	/* left column background colour */
 }
-.threecol .col1 {
-	width:46%;			/* width of center column content (column width minus padding on either side) */
-	left:102%;			/* 100% plus left padding of center column */
+.leftmenu .col1 {
+	width:71%;			/* right column content width */
+	left:102%;			/* 100% plus left column left padding */
 }
-.threecol .col2 {
-	width:21%;			/* Width of left column content (column width minus padding on either side) */
-	left:31%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+.leftmenu .col2 {
+	width:21%;			/* left column content width (column width minus left and right padding) */
+	left:6%;			/* (right column left and right padding) plus (left column left padding) */
 }
-.threecol .col3 {
-	width:21%;			/* Width of right column content (column width minus padding on either side) */
-	left:85%;			/* Please make note of the brackets here:
-					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+/* Footer styles */
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+	border-top:1px solid #000;
+}
+#footer p {
+	padding:10px;
+	margin:0;
 }
 
