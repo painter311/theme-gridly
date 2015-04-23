@@ -2560,6 +2560,7 @@ div.left p {
 }
 div.left p.bio {
   padding-top: 15px;
+  font-size:1rem;
 }
 div.left ul.left-links {
   padding-top: 15px;
@@ -2605,7 +2606,7 @@ div.left ul.left-links li a:hover {
 }
 .leftmenu .colleft {
 	right:75%;			/* right column width */
-	background:#f4f4f4;	/* left column background colour */
+	background:#fff;	/* left column background colour */
 }
 .leftmenu .col1 {
 	width:71%;			/* right column content width */
