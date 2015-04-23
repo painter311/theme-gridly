@@ -1580,7 +1580,7 @@ h4,
 h5,
 h6 {
   margin: 0.8125px 0;
-  color: #252525;
+  color: slategray;
   line-height: 1.625;
 }
 h1.title,
@@ -2561,6 +2561,7 @@ div.left p {
 div.left p.bio {
   padding-top: 15px;
   font-size:1rem;
+  color: darkslategrey;
 }
 div.left ul.left-links {
   padding-top: 15px;
@@ -2665,4 +2666,19 @@ line {
   color: #666666;
   font-size: .8em;
 }
+
+
+
+.post-content p, .post-content div {
+  padding: 7.5px 0;
+  margin: 0;
+  color: slategrey;
 }
+
+a {
+  font-weight: normal;
+}
+
+
+
+
