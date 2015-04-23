@@ -2652,7 +2652,7 @@ nav#nav {
 }
 
 
-.line {
+line {
   border-bottom: solid rgba(255, 255, 255, 0.45);
   border-bottom-width: 1px;
   border-bottom-width: 0.0625rem;
