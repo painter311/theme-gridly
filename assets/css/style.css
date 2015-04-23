@@ -2089,6 +2089,9 @@ hr.large {
 .post-content h2,
 .post-content h3 {
   padding-top: 15px;
+  line-height: 1em;
+
+
 }
 .post-content img {
   max-width: 100%;
@@ -2139,6 +2142,8 @@ hr.large {
 .post-content a {
 
   text-decoration: none;
+  color: darkslategray;
+
 
 }
 .post-content .socialbar-container a {
