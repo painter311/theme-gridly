@@ -166,13 +166,9 @@
                      <h3>{{ site.name }}</h3>
 
                     <p class="bio">{{ site.bio }}</p>
-                   
-                    <nav id="nav">
-                        <ul>
-                            <li><a href="/"></a>
-                            </li>{% if pages %} {% for page in pages %}
-                            <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a>
-                            </li>{% endfor %} {% endif %}</ul>
+                   <nav id="nav">
+<br>
+  <p>All Clips</p>
                     </nav>
                     <!-- start feedwind code -->
                     <script type="text/javascript">
@@ -200,7 +196,7 @@
                                 scrollstep: "3",
                                 mcspeed: "20",
                                 sort: "Off",
-                                rssmikle_title: "on",
+                                rssmikle_title: "off",
                                 rssmikle_title_sentence: "All Clips",
                                 rssmikle_title_link: "",
                                 rssmikle_title_bgcolor: "transparent",
@@ -229,6 +225,18 @@
                             feedwind_show_widget_iframe(params);
                         })();
                     </script>
+                    <nav id="nav"><br>
+  
+  <p class="bio">Contact</p>
+               <ul>
+                  <li>Lt. Joe Painter
+                            </li>
+  <li>joseph.painter@navy.mil
+                            </li>
+  <li>901-874-5809
+                            </li>
+  </ul>
+                    </nav>
                 </div>
              
             </div>
