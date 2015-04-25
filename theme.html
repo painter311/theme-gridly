@@ -142,13 +142,21 @@
                                      <h1>{{ link.title }}</h1>
 
                                 </header>
-                                <p class="post-date">Published by {{ site.author }},
-                                    <time datetime="{{ link.created_at }}">{{ link.created_at|date_format }}</time>
+                                <p class="post-date">Published by:
                                 </p>{{ link.content }}
                                 <p class="link-url"><i class="icon-share"></i>  <a href="{{ link.url }}">{{ link.url }}</a>
                                 </p>
                             </div>
-                            <div class="post-footer">{{ theme.social.bar }} {% if post.tags %}
+                            <div class="post-footer"><a href="http://twitter.com/home?status=" title="Share on Twitter" target="_blank" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+ <!-- Facebook -->
+<a href="https://www.facebook.com/sharer/sharer.php?u=" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+<!-- Google+ -->
+<a href="https://plus.google.com/share?url=" title="Share on Google+" target="_blank" class="btn btn-googleplus"><i class="fa fa-google-plus"></i> Google+</a>
+<!-- StumbleUpon -->
+<a href="http://www.stumbleupon.com/submit?url=" title="Share on StumbleUpon" target="_blank" data-placement="top" class="btn btn-stumbleupon"><i class="fa fa-stumbleupon"></i> Stumbleupon</a>
+<!-- LinkedIn --> 
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=" title="Share on LinkedIn" target="_blank" class="btn btn-linkedin"><i class="fa fa-linkedin"></i> LinkedIn</a>
+     {% if post.tags %}
                                 <p><strong>Tags:</strong> {{ post.tags|format_tags(humanize=True) }}</p>{% endif %}</div>
                         </section>{% if site.disqus %}
                         <hr class="large" />
