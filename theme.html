@@ -90,23 +90,6 @@
                                 <header>
                                      <h1>{{ post.title }}</h1>
 
-              
-              <div class="post-content">
-              <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-{% if post.tags and not post.photos %}
-                                <p class="post-tags">{{- post.tags|format_tags(humanize=True) -}}</p>{% endif %} {% if post.content|striptags|wordcount > 0 %}
-                                <p>{{ post.content|striptags|truncate(200) }}</p>
-                                <p class="post-link"><a href="{{ post.permalink }}">View more &rarr;</a>
-                                </p>{% endif %}
-              </div>
-              </article>{% endfor %}</section>{% if not is_tag %}
-              <div class="pagination">{% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %} {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}
-              </div>
-              </div>
-              {% endif %} {% else %}
-              
-              <h2 class="title"><em>No posts yet :(</em></h2>
-{% endif %} {% elif post.type == 'post' %}
                                 </header>{{ post.content}}
               </div>
               <div class="post-footer">
@@ -264,7 +247,7 @@
                             feedwind_show_widget_iframe(params);
                         })();
                     </script>
-              
+                    vvvvvvvvvv
                     <br>
 <line>
                   <br>Lt. Joe Painter
