@@ -1544,6 +1544,7 @@ ul.icons-ul > li .icon-li {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-repeat: no-repeat;
+  float: right;
 }
 html {
   -webkit-text-size-adjust: 100%;
