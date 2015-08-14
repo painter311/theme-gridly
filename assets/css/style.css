@@ -2096,6 +2096,8 @@ hr.large {
 .post-content img {
   max-width: 100%;
   max-height: 400px !important;
+  float: right;
+
 }
 .post-content .mejs-container {
   margin-top: 7.5px;
